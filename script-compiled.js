@@ -16,6 +16,7 @@ var multiply = function multiply() {
 console.log(multiply(2, 5));
 console.log(multiply(6, 9));
 console.log(multiply(2));
+console.log('-----------');
 
 // Ex 3
 var average = function average() {
@@ -24,14 +25,14 @@ var average = function average() {
   }
 
   return args.reduce(function (x, y) {
-    return (x + y) / args.length;
-  });
+    return x + y / args.length;
+  }, 0);
 };
 
 console.log(average(1));
 console.log(average(1, 3));
-console.log(average(1, 3, 9, 1, 8));
-
+console.log(average(1, 3, 9, 12));
+console.log('-----------');
 //Ex 4
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 
